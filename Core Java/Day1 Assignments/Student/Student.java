@@ -1,3 +1,32 @@
+/*
+Student 
+   name, identifier, age, standard, marks obtained in each subject
+   public void display(){  }
+
+Testclass1 with main
+step1 
+   define an object for student and display data
+
+Testclass2 with main
+step2
+create main2
+   define an object array for 5 students and display data
+
+
+StudentManipulation
+{
+   Student[] createStudnets(){//}
+   int total(Student stu)
+   int findmax(Student [] students)   // Student findmax(Student [] students)
+
+}
+step 4
+main 
+   1. grab array from student manipulation
+   2. pass element one by one from array to total function to calculate total marks
+   3. pass array to findmax in orderto search for student with highest total
+*/
+
 public class Student {
 	private String name;
 	private int identifier;
