@@ -1,7 +1,7 @@
 
-public class Shape1 {
+public class Shape {
        private String name;
-       public Shape1() {
+       public Shape() {
 		// TODO Auto-generated constructor stub
 	}
 	public String getName() {
@@ -10,7 +10,7 @@ public class Shape1 {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public Shape1(String name) {
+	public Shape(String name) {
 		super();
 		this.name = name;
 	}
