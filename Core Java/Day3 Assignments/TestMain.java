@@ -74,7 +74,6 @@ public class TestMain {
 						    e.printStackTrace();
 						    }
 			         }
-			        	// System.out.println("Sorry! There is no book with given ISBN.Please enter a valid ISBN for updating the price.");
 			         System.out.println("-----------------------------------");
 			         break;
 			case 4: System.out.println("The details of all the books are as follows :- ");
