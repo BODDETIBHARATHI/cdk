@@ -19,6 +19,8 @@ public class TestMain {
 		double price;
 		int choice;
 		Book b;
+		try{
+			
 		while(true) {
 			System.out.println("1. Find book by ISBN\n2. Find book by name\n3. Update book price\n4. Display book details\n5. Exit");
 			choice = sc.nextInt();
@@ -29,13 +31,7 @@ public class TestMain {
 			         if(b.getIsbn() != 0)
 			        	 System.out.println("The details of the book are : \n"+b);
 			         else {
-			        	 try{
-								throw new BookNotFoundException("Sorry! There is no book with given ISBN.Please enter a valid ISBN."); //here the message will be thrown
-
-						} catch (BookNotFoundException e) {
-							// TODO Auto-generated catch block
-						    e.printStackTrace();
-						    }
+			        	 throw new BookNotFoundException("Sorry! There is no book with given name.Please enter a valid name.");
 			         }
 			        	 //System.out.println("Sorry! There is no book with given ISBN.Please enter a valid ISBN.");
 			         System.out.println("-----------------------------------");
@@ -47,13 +43,7 @@ public class TestMain {
 					     System.out.println("The details of the book are : \n"+b);
 					 else
 					 {
-						 try{
-								throw new BookNotFoundException("Sorry! There is no book with given name.Please enter a valid name.");
-
-						} catch (BookNotFoundException e) {
-							// TODO Auto-generated catch block
-						    e.printStackTrace();
-						    }
+						 throw new BookNotFoundException("Sorry! There is no book with given name.Please enter a valid name.");
 					 }
 					     //System.out.println("Sorry! There is no book with given name.Please enter a valid name.");
 			         System.out.println("-----------------------------------");
@@ -66,14 +56,9 @@ public class TestMain {
 			         if(b.getIsbn()!=0)
 			        	 System.out.println("The details of the book are : \n"+b);
 			         else {
-			        	 try{
-								throw new BookNotFoundException("Sorry! There is no book with given ISBN.Please enter a valid ISBN for updating the price.");
-
-						} catch (BookNotFoundException e) {
-							// TODO Auto-generated catch block
-						    e.printStackTrace();
-						    }
+			        	 throw new BookNotFoundException("Sorry! There is no book with given name.Please enter a valid name.");
 			         }
+			        	// System.out.println("Sorry! There is no book with given ISBN.Please enter a valid ISBN for updating the price.");
 			         System.out.println("-----------------------------------");
 			         break;
 			case 4: System.out.println("The details of all the books are as follows :- ");
@@ -81,8 +66,14 @@ public class TestMain {
 			        System.out.println("-----------------------------------");
 			        break;
 			case 5: System.exit(0);
+			default : System.out.println("Please enter valid option");
 			}
 		}
+		}catch (BookNotFoundException e) {
+				// TODO Auto-generated catch block
+			    e.printStackTrace();
+			    }
+		
 		
   
 	}
