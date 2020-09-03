@@ -1,0 +1,19 @@
+Topics Covered  :
+
+Working with data types
+String, int, float, double
+-	
+1.	Display the message, ‘Lincoln said: "Four score and seven years ago"’.
+2.	Read a double find its square root and display it.
+3.	Write a program to display the message, “Welcome to Basic Java”. To do this, define a string array greeting, store each word (say Welcome) in the separate array element of array greeting and then display the above message using the array.
+4.	Declare and initialize an integer array, myarray. Display the total number of integers in the array and also the individual array elements.
+5.	Read 5 words from the command line and display the average length of each word.
+6.	Read a two-dimensional integer array from the user. Display the array length as well as the number of elements in each row.
+7.	Declare and intialize two float arrays f1 and f2. Copy the contents of f1 to f2. Display the contents of f2.
+8.	Write a java application called operation. The application takes three arguments from the command line; the first and the third arguments are float values and the second argument is an arithmetic operation like +, -, *, and /. In the application, perform the required operation on the float values and display the result. 
+9.	Write a java application that calculates the retirement time for a person. Before calculating, ask the user how much money he needs after retirement, yearly how much he can contribute and the rate of interest. At the end of every year his accumulated balance amount will be, 
+New balance = (prev balance + yearly contribution) * (1 + interest/100); 
+10.	Read an array of integers. Sort them using any sorting technique and display the sorted array.
+11.	Read some arguments from the command line and display total number of digits and characters in the arguments.
+12.	Read month and year (as numbers) from the command line and display number of days in that month. To do, write a function to check whether a given year is a leap year and use this to display appropriate number of days.
+13.	Read a string of four characters from the user and display all the possible combinations of the characters. E.g. if the characters in the string are A,T, R and E then the possible combinations would be ATRE, ARTE, ATER etc…Note that the character should not repeat in a combination.

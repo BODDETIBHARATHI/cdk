@@ -1,0 +1,68 @@
+Lab 1 - installation + connection
+  1. set path
+     -> set ora (check installation directory for oracle db)
+  2. sqlplus
+     ->if path -> sqlclient is installed 
+  3. Task Manager
+     services -> check orac* services
+  
+  TO connect
+    sqlplus '/ as sysdba'
+    give installation password here
+    on sql prompt 
+      CREATE USER scott1 IDENTIFIED BY tiger1;
+      GRANT CONNECT TO scott1;
+      GRANT CONNECT, RESOURCE, DBA TO scott1;
+      exit
+    on cmd prompt
+      sqlplus 
+        login - scott1
+        password - tiger1
+      create table dept (deptno varchar(2) );
+       select * from dept;
+
+Lab 2 - connection
+    connect to remote oracle installation (SQLClient / TOAD)
+        sqlplus admin/MyPassword@//mydb.cyhhds8qhsga.us-east-1.rds.amazonaws.com:1521/mydb
+        sqlplus admin/MyPass@//mydb.cyhhds8qhsga.us-east-1.rds.amazonaws.com:1521/ORCL
+
+sqlplus 'admin@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=mydb.cyhhds8qhsga.us-east-1.rds.amazonaws.com)(PORT=1521))(CONNECT_DATA=(ORCL)'
+
+        
+Lab 3 - Live oracle session
+    https://livesql.oracle.com/apex/f?p=590:1000
+    
+Lab 4 - 
+---------------------------------------
+Table Structure
+	Emp -> empno, ename, salary, dept (IT,FI,HR)
+	-> unique identification of row 
+		-> rowid
+		-> primary key
+		
+	create table dept (
+		empno number(3) primary key,  
+		ename varchar(20),
+		salary number(7),
+		dept char(2)
+		);
+		
+	insert into dept values (1,'AAA',111.11,'IT');
+	insert into dept values (2,'BBB',222.22,'IT');
+  
+    
+    
+Lab 5 - select  ( https://www.oracletutorial.com/oracle-basics/oracle-like/)
+Create table with given rows
+1. show all employee details where
+	name starts with "R"
+	name ends with "li"
+	name has "sh" 
+	salary - <,>,<=,>=, !=, between
+	deptno is IT
+	deptno is IT or FN (IN)
+	
+Lab 6 - group by
+	select dept from emp group by dept
+	select dept, count(*) from emp group by dept;
+	select dept,min(salary), max(salary) from emp group by dept;
