@@ -1,0 +1,6 @@
+Lab 1- eclipse 
+  new project -> web -> static web 
+  1. Create html page
+    properties -> path -> IE, Chrome
+  2. HTML, Title, body, H1
+  

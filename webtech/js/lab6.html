@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>JS LAB 2 </title>
+<script type="text/javascript">
+	var no1 =0
+	var no2 = 0
+	 var op="N" 
+	 function divnumbers(event){
+		 //console.log(event.srcElement.value)
+		
+		 if (op==="N"){
+			 no1 = event.srcElement.value
+		 } 
+		 else
+			 {
+			 no2 =  event.srcElement.value
+			 }
+	console.log("no1 = " + no1 + ", no2 = " + no2 + " op = " + op) 
+	}
+	function divop(event){
+		op = event.srcElement.value;
+	}
+	
+	function result()
+	{
+		if (op!=="N"){
+		var ans = (op==="+")? parseInt(no1) +parseInt(no2):parseInt(no1) -parseInt(no2);
+			
+/*		var ans = 0
+		if()
+			{
+				ans = parseInt(no1) +parseInt(no2);
+			}
+		else if(op==="-")
+			{
+			ans = parseInt(no1) -parseInt(no2);
+			}
+	*/
+		document.getElementById("result").innerHTML = ans
+		op="N"
+		}
+	}
+</script>
+</head>
+<body >
+<div id="numbers" onclick="divnumbers(event)">
+    <input type="button" value="1" /><input type="button" value="2" /><input type="button" value="3" /><br/>
+    <input type="button" value="4" /><input type="button" value="5" /><input type="button" value="6" /><br/>
+    <input type="button" value="7" /><input type="button" value="8" /><input type="button" value="9" /><br/>
+    <input type="button" value="0" /><br/>
+  </div>
+    <span onclick="divop(event)"><input type="button" value="+" /><input type="button" value="-" /></span>
+    
+    <input type="button" value="="  onclick="result()"/><br/>
+   <div id="result"></div>    
+
+</body>
+</html>

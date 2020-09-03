@@ -1,0 +1,146 @@
+Day3 - 
+Lab 1 - Data Structures
+Array  Linked List Stack Queue
+
+1. Sequential Access / Random Access
+2. Static Allocation/Dynamic Allocation
+3. Policy for getting/putting numbers
+4. use of 
+
+
+Lab 2 - class Stack{
+Data members -
+	top (counter)
+	array (string)
+Methods -
+	push - adding element
+	top - see the element but not consume
+	pop - returned and delete
+	isEmpty
+Lab 3 - queue (algorithm/flow
+Queue ( c++ -> flow of program)
+	Array
+		-> enqueue/add -> push an element in queue
+		-> dequeue/poll -> pull an element from queue
+		
+
+Lab 4 - Binary Tree
+	https://www.geeksforgeeks.org/binary-tree-data-structure/
+	introduction - 1, 2, 3
+	1. Sequential Access / Random Access
+	2. Static Allocation/Dynamic Allocation
+	3. Policy for getting/putting numbers
+	4. uses
+
+------------------------------------------------------------------------------------------
+
+
+Day 2 
+Lab 1 - Start eclipse + new workspace
+	new Java Project -> new CLass -> Lab1 with main method
+		sysout -> ctrl+space
+
+Lab 2  - 
+	class Emp{
+		private  int empno;
+		private String ename;
+		private double salary;	
+		-> source -> generate getters/setter, 
+	class asgn2 (main)
+		Array of Emp -> 5 
+		Accept 5 emp details from user -> list of 
+		
+Lab 3 - 
+5 employee -> list
+Array (10 elements)
+-> Create
+-> Update
+-> Delete
+-> List
+
+Emp class (int empno, String ename, double salary + public get/set )
+EmpManager class
+{
+	private Emp[] arr = new Emp[count]
+	// current
+	public void create(Emp e){
+		// add emp to arr
+	}
+	public void update(int itemno, Emp e){
+		//modify  arr[itemno]=e
+	}
+	public void delete(empno){  
+		for loop to check empno -> delete that item
+		shift rest of the items +1
+	}
+	public void print()
+	{
+		//print all the items
+	}
+}
+
+------------------------------------------------------------------------------------------
+
+Day 1 
+
+https://www.oracle.com/in/java/technologies/javase/javase-jdk8-downloads.html#license-lightbox
+---> https://www.filepuma.com/download/java_development_kit_64bit_8.0.2110.12-22044/download/
+https://www.oracle.com/database/technologies/xe-downloads.html#license-lightbox
+https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/neon/3/eclipse-jee-neon-3-win32-x86_64.zip
+
+
+
+Lab 1 - Installation of JDK
+  1. open cmd prompt
+      invoke path and copy current path textpad
+  2.  install JDK
+  3. open cmd prompt
+      invoke path and copy current path textpad and compare with earlier path
+  
+Lab 2 - Hello world
+  public class Demo1{
+  public static void main(String[] args){
+    System.out.println("Hello World !!!");
+  }
+  }	
+  -> javac, java -> Javac Demo1.java , java Demo1 
+  Error 
+    -> modify file name to Demo2.java 
+    -> keep same file name, remove public ->success
+    -> set path=;
+    -> compile
+    -> modify path to include jdk bin
+    -> compile and run 
+
+Lab 3 - Data types
+  https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html
+  Create a variable for each data type, initialize and print
+  
+Lab 4 - Array 
+  print only elements where string length is more than 3
+import java.util.Arrays;
+public class Demo4 {
+    public static void main(String[ ] args) {
+       System.out.println("Args "+ Arrays.toString(args));
+       
+    }
+}
+
+Lab 5 - Array  + for , if ...
+import java.util.Arrays;
+import java.util.Scanner;
+public class Demo6{
+   public static void main(String args[]){
+     System.out.println("Enter 1 strings ");
+	 Scanner scanner = new Scanner(System.in);
+	 String str = scanner.next();
+	 System.out.println("Current String = "+ str);
+ }
+}
+l. Accept 5 string from your and print sorted string
+  -> Read API and find how to sort
+2. Accept strings till user says stop
+  ->Print
+3. + convert entire array to uppercase
+
+

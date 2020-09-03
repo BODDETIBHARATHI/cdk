@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>JS LAB 2 </title>
+<script type="text/javascript">
+	 function check(){
+		 console.log("init- on body click  ");
+	 }
+	 function test1(){
+		 var str = "<td>" + document.getElementById("empId").value  + "</td>" +
+		 				"<td>" +  document.getElementById("empName").value + "</td>" + 
+		 				"<td>" + document.getElementById("salary").value + "</td>";
+		 
+		 				
+		 console.log("test1 - on button click");
+		 document.getElementById("mytr").innerHTML = str;
+		 
+	 }
+	 
+</script>
+</head>
+<body onclick="check()" >
+aaaaaaaaaaaa
+    <table>
+         
+         <tr>
+         <td>Employee ID   :</td>
+         <td><input type="number" id="empId"></td>
+         </tr>
+         <tr>
+            <td>Employee Name  :</td>
+            <td><input type="text" id="empName"></td>
+         </tr>
+         <tr>
+            <td>Salary  : </td>
+            <td><input type="number" id="salary"></td>
+         </tr>
+    </table>
+	<input type="button" value="Click me" onclick="test1()"/><br/><br/>
+	
+	<table border="1px" align="center">
+	   	     <tr>
+	         <th> ID</th>
+	         <th> Name</th>
+	         <th> Salary</th>
+	     </tr>
+	     <tr id="mytr">
+	         <td >EMPLOYEE ID</td>
+	         <td >EMPLOYEE Name</td>
+	         <td >EMPLOYEE Salary</td>
+	     </tr>
+	</table>
+   
+
+</body>
+</html>

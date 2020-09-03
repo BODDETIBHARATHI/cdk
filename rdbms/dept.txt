@@ -1,0 +1,24 @@
+create table dept (
+		empno number(3) primary key,  
+		ename varchar(20),
+		salary number(7),
+		dept char(2)
+		);
+		
+	
+insert into dept values (1,'Vaishali',100,'IT');
+insert into dept values (2,'Simran',300,'FI');
+insert into dept values (3,'Vijetha',340,'IT');
+insert into dept values (4,'Saumit',440,'IT');
+insert into dept values (5,'Swarali',305,'HR');
+insert into dept values (6,'Vishnu',999,'IT');
+insert into dept values (7,'Reshma',1,'IT');
+insert into dept values (8,'Rohit',453,'IT');
+insert into dept values (9,'SaiKiran',110,'HR');
+insert into dept values (10,'Naresh',705,'IT');
+insert into dept values (11,'Aishwarya',560,'IT');
+insert into dept values (12,'Akash',411,'IT');
+insert into dept values (13,'Akshay',110,'FI');
+insert into dept values (14,'Anusha',2220,'IT');
+insert into dept values (15,'Naga',10,'IT');
+insert into dept values (16,'Ramya',5000,'FI');

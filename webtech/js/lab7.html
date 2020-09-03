@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Arrays</title>
+<script>
+var names=new Array()
+/*function addToArray(){
+	
+	names.push(document.getElementById("inp").value)
+	var s=""
+    for(i=0;i<names.length;i++){
+		s +="<tr>"+"<td>"+names[i]+"</td>"+"</tr>"
+}
+	s="<tr>"+"<td>"+"Names:"+"</td>"+"</tr>"+s;
+	document.getElementById("mytbl").innerHTML=s;
+}
+*/
+function addToArray(){
+	var table = document.getElementById("mytbl");
+	var row = table.insertRow(-1);
+	var cell1 = row.insertCell(0);
+	cell1.innerHTML = document.getElementById("inp").value;
+}
+</script>
+</head>
+
+<body>
+Name:<input id="inp" type="text"><br/><br/>
+<input type="button" id="btn" value="Add" onclick="addToArray()"><br/><br/>
+<div id="div1">
+<table border="1" id="mytbl">
+<tr>
+<td>Names
+</tr>
+</table>
+</div>
+</body>
+</html>
